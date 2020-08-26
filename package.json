@@ -1,0 +1,37 @@
+{
+  "name": "orchestrator",
+  "private": true,
+  "author": "Orchestrator <info@orchestrator.me>",
+  "devDependencies": {
+    "@babel/cli": "^7.10.5",
+    "@babel/core": "^7.10.5",
+    "@babel/preset-env": "^7.10.4",
+    "@babel/register": "^7.10.5",
+    "@pectin/babelrc": "^3.3.3",
+    "chai": "^4.2.0",
+    "eslint": "^6.8.0",
+    "lerna": "^3.20.2",
+    "mocha": "^6.2.3",
+    "nodemon": "^2.0.2",
+    "pectin": "^3.6.1",
+    "rollup-plugin-babel": "^4.4.0",
+    "serverless": "^1.74.1",
+    "serverless-offline": "^6.0.0-alpha.67",
+    "yo": "^3.1.1"
+  },
+  "scripts": {
+    "new": "yo orchestrator",
+    "add": "func() { lerna add $1 --scope=$2; }; func",
+    "bootstrap": "lerna bootstrap",
+    "function": "func() { lerna run start --scope=\"$1\" --stream; }; func",
+    "package": "func() { lerna run package --scope=\"$1\" --stream; }; func",
+    "deploy": "func() { lerna run deploy --scope=\"$1\" --stream; }; func",
+    "clean": "git clean -fdx packages",
+    "prerelease": "npm run clean && pectin",
+    "release": "lerna publish",
+    "lint": "eslint .",
+    "build": "pectin && npm run lint",
+    "pretest": "pectin && npm run lint",
+    "test": "lerna run test"
+  }
+}

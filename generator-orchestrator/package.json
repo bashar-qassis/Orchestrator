@@ -1,0 +1,19 @@
+{
+  "name": "generator-orchestrator",
+  "version": "1.0.0",
+  "private": true,
+  "main": "app/index.js",
+  "description": "Generator for orchestrator packages",
+  "files": [
+    "generators"
+  ],
+  "keywords": [
+    "yeoman-generator"
+  ],
+  "scripts": {
+    "build": "babel --root-mode upward src --out-dir ./dist"
+  },
+  "dependencies": {
+    "yeoman-generator": "^2.0.5"
+  }
+}

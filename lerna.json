@@ -1,0 +1,13 @@
+{
+  "packages": [
+    "libs/*",
+    "functions/*",
+    "generator-orchestrator"
+  ],
+  "version": "independent",
+  "command": {
+    "list": {
+      "all": true
+    }
+  }
+}

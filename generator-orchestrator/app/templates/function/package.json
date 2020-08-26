@@ -1,0 +1,25 @@
+{
+    "name": "@orchestrator/<%= props.name %>",
+    "version": "<%= props.version %>",
+    "private": true,
+    "description": "<%= props.description %>",
+    "author": "Orchestrator <info@orchestrator.me>",
+    "main": "dist/app.js",
+    "module": "dist/app.module.js",
+    "directories": {
+        "src": "dist",
+        "tests": "tests"
+    },
+    "files": [
+        "dist"
+    ],
+    "devDependencies": {},
+    "dependencies": {},
+    "scripts": {
+        "build": "babel --root-mode upward src --out-dir ./dist",
+        "start": "nodemon --exec \"pectin && sls offline\"",
+        "test": "mocha",
+        "package": "serverless package",
+        "deploy": "serverless deploy"
+    }
+}

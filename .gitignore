@@ -1,0 +1,13 @@
+.idea/
+
+.aws-sam/
+node_modules/
+.serverless/
+dist/
+
+lerna-debug.log
+npm-debug.log
+
+.env
+.DS_Store
+package-lock.json
