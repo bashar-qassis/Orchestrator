@@ -10,3 +10,6 @@ A serverless Monorepo framework based on [Lerna](https://github.com/lerna/lerna)
 - [ ] Add support for typescript packages
 - [ ] Add support for scoped serverless command arguments
 - [ ] Publishing packages yet to be tested
+- [ ] Update Serverless to V3
+- [ ] Update Serverless offline to latest version
+- [ ] 
